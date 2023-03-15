@@ -61,7 +61,7 @@ export default function App() {
       <Canvas
         shadows
         camera={{
-          fov: 75,
+          fov: 100,
           near: 0.1,
           far: 2000,
           position: [10, 0, 30],

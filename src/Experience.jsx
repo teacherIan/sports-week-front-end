@@ -16,17 +16,15 @@ export default function Experience({
       <OrbitControls makeDefault />
       <Lights />
       <Sky
-        distance={500}
-        sunPosition={[0, 100, 2000]}
+        distance={100000}
+        sunPosition={[0, 5000, 1000]}
         inclination={1}
-        azimuth={0.75}
+        azimuth={0.25}
       />
 
-      {currentEvent == 1 ? (
-        <Race ruby={ruby} amber={amber} pearl={pearl} sapphire={sapphire} />
-      ) : null}
+      <Race ruby={ruby} amber={amber} pearl={pearl} sapphire={sapphire} />
 
-      <BasketballDrop />
+      {/* <BasketballDrop /> */}
       {/* <HouseUpdate /> */}
     </>
   );
